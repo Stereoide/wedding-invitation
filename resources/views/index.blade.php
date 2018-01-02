@@ -16,26 +16,10 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
     <!-- Styles -->
     <style>
-        @font-face {
-            font-family: madge-script;
-            src: url(fonts/madge_script.otf);
-        }
-
-        @font-face {
-            font-family: touch-of-nature;
-            src: url(fonts/touch_of_nature.ttf);
-        }
-
         html, body {
             background: #0079a4 url({{ asset('img/background.png') }}) left top repeat-x;
             color: #636b6f;
@@ -68,39 +52,18 @@
             float: right;
         }
 
+        .texts {
+            display: none;
+        }
+
         .text {
+            min-width: 50%;
             max-width: 80%;
         }
 
         .text H1 {
-            font-family: touch-of-nature;
+            font-family: 'Dancing Script';
             color: #000;
-        }
-
-        @keyframes dash {
-            0% {
-                stroke-dashoffset: 15;
-            }
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-
-        .bird-wing {
-            stroke-dasharray: 30;
-            stroke-dashoffset: 15;
-            /*
-            -webkit-animation: dash 1s 0s infinite alternate;
-            -o-animation: dash 1s 0s infinite alternate;
-            animation: dash 1s 0s infinite alternate;
-            */
-        }
-
-        .bird-1-wing, .bird-3-wing, .bird-4-wing, .bird-5-wing, .bird-8-wing, .bird-9-wing {
-            -webkit-animation-delay: 1s;
-            -moz-animation-delay: 1s;
-            -o-animation-delay: 1s;
-            animation-delay: 1s;
         }
     </style>
 </head>
@@ -154,152 +117,132 @@
         </g>
 
         <g class="floor-clickers">
-            <polygon class="floor-clicker" data-target="floor-1" fill="#00FF00" points="661.4,287 738.6,287 741.3,330.9 658.7,330.9" fill-opacity="0"/>
-            <polygon class="floor-clicker" data-target="floor-2" fill="#00FF00" points="744.3,381.4 655.7,381.4 658.7,330.9 741.3,330.9" fill-opacity="0"/>
-            <polygon class="floor-clicker" data-target="floor-3" fill="#00FF00" points="744.3,381.4 655.7,381.4 652,442.2 748,442.2" fill-opacity="0"/>
-            <polygon class="floor-clicker" data-target="floor-4" fill="#00FF00" points="752.2,511.4 647.8,511.4 652,442.2 748,442.2" fill-opacity="0"/>
-            <polygon class="floor-clicker" data-target="floor-5" fill="#00FF00" points="752.2,511.4 647.8,511.4 642.6,597.1 757.4,597.1" fill-opacity="0"/>
-            <polygon class="floor-clicker" data-target="floor-6" fill="#00FF00" points="763.6,697.9 636.4,697.9 642.6,597.1 757.4,597.1" fill-opacity="0"/>
-        </g>
-
-        <g class="birds birds-left">
-            <path class="bird bird-1 bird-wing bird-1-wing bird-1-wing-left" stroke="black" stroke-width="2" d="M 80,120 C 80,110, 70,100, 60,110" fill="none" />
-            <path class="bird bird-1 bird-wing bird-1-wing bird-1-wing-right" stroke="black" stroke-width="2" d="M 80,120 C 80,110 90,100 100,110" fill="none" />
-
-            <path class="bird bird-2 bird-wing bird-2-wing bird-2-wing-left" stroke="black" stroke-width="2" d="M 280,220 C 280,210, 270,200, 260,210" fill="none" />
-            <path class="bird bird-2 bird-wing bird-2-wing bird-2-wing-right" stroke="black" stroke-width="2" d="M 280,220 C 280,210 290,200 300,210" fill="none" />
-
-            <path class="bird bird-3 bird-wing bird-3-wing bird-3-wing-left" stroke="black" stroke-width="2" d="M 580,520 C 580,510, 570,500, 560,510" fill="none" />
-            <path class="bird bird-3 bird-wing bird-3-wing bird-3-wing-right" stroke="black" stroke-width="2" d="M 580,520 C 580,510 590,500 600,510" fill="none" />
-
-            <path class="bird bird-4 bird-wing bird-4-wing bird-4-wing-left" stroke="black" stroke-width="2" d="M 480,170 C 480,160, 470,150, 460,160" fill="none" />
-            <path class="bird bird-4 bird-wing bird-4-wing bird-4-wing-right" stroke="black" stroke-width="2" d="M 480,170 C 480,160 490,150 500,160" fill="none" />
-
-            <path class="bird bird-5 bird-wing bird-5-wing bird-5-wing-left" stroke="black" stroke-width="2" d="M 180,620 C 180,610, 170,600, 160,610" fill="none" />
-            <path class="bird bird-5 bird-wing bird-5-wing bird-5-wing-right" stroke="black" stroke-width="2" d="M 180,620 C 180,610 190,600 200,610" fill="none" />
-
-            <path class="bird bird-6 bird-wing bird-6-wing bird-6-wing-left" stroke="black" stroke-width="2" d="M 380,420 C 380,410, 370,400, 360,410" fill="none" />
-            <path class="bird bird-6 bird-wing bird-6-wing bird-6-wing-right" stroke="black" stroke-width="2" d="M 380,420 C 380,410 390,400 400,410" fill="none" />
-        </g>
-
-        <g class="birds birds-right">
-            <path class="bird bird-7 bird-wing bird-7-wing bird-7-wing-left" stroke="black" stroke-width="2" d="M 830,240 C 830,230, 820,220, 810,230" fill="none" />
-            <path class="bird bird-7 bird-wing bird-7-wing bird-7-wing-right" stroke="black" stroke-width="2" d="M 830,240 C 830,230 840,220 850,230" fill="none" />
-
-            <path class="bird bird-8 bird-wing bird-8-wing bird-8-wing-left" stroke="black" stroke-width="2" d="M 1280,40 C 1280,30, 1270,20, 1260,30" fill="none" />
-            <path class="bird bird-8 bird-wing bird-8-wing bird-8-wing-right" stroke="black" stroke-width="2" d="M 1280,40 C 1280,30 1290,20 1300,30" fill="none" />
-
-            <path class="bird bird-9 bird-wing bird-9-wing bird-9-wing-left" stroke="black" stroke-width="2" d="M 980,560 C 980,550, 970,540, 960,550" fill="none" />
-            <path class="bird bird-9 bird-wing bird-9-wing bird-9-wing-right" stroke="black" stroke-width="2" d="M 980,560 C 980,550 990,540 1000,550" fill="none" />
-
-            <path class="bird bird-10 bird-wing bird-10-wing bird-10-wing-left" stroke="black" stroke-width="2" d="M 1380,760 C 1380,750, 1370,740, 1360,750" fill="none" />
-            <path class="bird bird-10 bird-wing bird-10-wing bird-10-wing-right" stroke="black" stroke-width="2" d="M 1380,760 C 1380,750 1390,740 1400,750" fill="none" />
-
-            <path class="bird bird-11 bird-wing bird-11-wing bird-11-wing-left" stroke="black" stroke-width="2" d="M 1130,390 C 1130,380, 1120,370, 1110,380" fill="none" />
-            <path class="bird bird-11 bird-wing bird-11-wing bird-11-wing-right" stroke="black" stroke-width="2" d="M 1130,390 C 1130,380 1140,370 1150,380" fill="none" />
+            <polygon class="floor-clicker" data-target="wer" fill="#00FF00" points="661.4,287 738.6,287 741.3,330.9 658.7,330.9" fill-opacity="0"/>
+            <polygon class="floor-clicker" data-target="was" fill="#00FF00" points="744.3,381.4 655.7,381.4 658.7,330.9 741.3,330.9" fill-opacity="0"/>
+            <polygon class="floor-clicker" data-target="wann" fill="#00FF00" points="744.3,381.4 655.7,381.4 652,442.2 748,442.2" fill-opacity="0"/>
+            <polygon class="floor-clicker" data-target="wo" fill="#00FF00" points="752.2,511.4 647.8,511.4 652,442.2 748,442.2" fill-opacity="0"/>
+            <polygon class="floor-clicker" data-target="wie" fill="#00FF00" points="752.2,511.4 647.8,511.4 642.6,597.1 757.4,597.1" fill-opacity="0"/>
+            <polygon class="floor-clicker" data-target="warum" fill="#00FF00" points="763.6,697.9 636.4,697.9 642.6,597.1 757.4,597.1" fill-opacity="0"/>
         </g>
     </svg>
 
     <div class="texts">
-        <div class="text text-floor-1">
-            <h1>Floor 1</h1>
+        <div class="text text-wer">
+            <h1>Wer</h1>
 
             <p>
-                Bacon ipsum dolor amet ad meatloaf cow sunt est drumstick proident fugiat laborum flank tenderloin deserunt fatback. Est quis anim nostrud meatloaf pork loin, bresaola incididunt. Aliqua velit short ribs, pariatur chicken ground round venison ipsum. Et pig meatball, cow sint ham hock andouille dolore minim laboris in spare ribs kielbasa picanha. Aliquip sausage shoulder, eiusmod cupim esse frankfurter velit kielbasa do drumstick occaecat aliqua.
+                Anja Riemann &amp; Jörn Maske
             </p>
 
             <p>
-                Velit picanha capicola commodo do, ut sunt deserunt ex reprehenderit nostrud. Short ribs pork ground round non. Corned beef veniam et in sirloin bresaola. Culpa buffalo incididunt dolore, turkey fugiat pariatur burgdoggen swine short ribs. Aute ground round pork beef andouille pancetta.
-            </p>
-
-            <p>
-                <span class="floor-clicker floor-clicker-previous float-left" data-target="floor-6">Floor 6</span>
-                <span class="floor-clicker floor-clicker-next float-right" data-target="floor-2">Floor 2</span>
+                <span class="floor-clicker floor-clicker-previous float-left" data-target="warum">Wieso Weshalb Warum</span>
+                <span class="floor-clicker floor-clicker-next float-right" data-target="was">Was</span>
             </p>
         </div>
 
-        <div class="text text-floor-2">
-            <h1>Floor 2</h1>
+        <div class="text text-was">
+            <h1>Was</h1>
 
             <p>
-                Bacon ipsum dolor amet cupim adipisicing quis sunt in, ut porchetta meatloaf occaecat drumstick. Chicken qui short ribs cupidatat. Labore aliqua prosciutto, cillum bresaola exercitation alcatra tri-tip. Rump id turducken lorem andouille minim tail do esse duis venison aliqua est doner. Turducken venison occaecat do jerky. Jerky voluptate id buffalo meatball sausage. Incididunt shankle qui pork.
+                Wir feiern unsere Hochzeit, welche einige Tage vorher im Kreise der Familie stattfinden wird.<br />
+                Daher laden wir heute zu unserer Hochzeitsparty ein.
             </p>
 
             <p>
-                Ea prosciutto chuck hamburger pork loin ut tongue voluptate do lorem strip steak in ex est. Deserunt dolore dolore, cow cillum hamburger commodo burgdoggen esse cupidatat. Id pork chop jerky pork. Aliquip shank ball tip strip steak dolore tri-tip meatball proident burgdoggen consequat cillum enim shankle eu pork chop. Swine short loin ham ipsum, officia pork chop bacon alcatra dolore exercitation reprehenderit enim meatball.
-            </p>
-
-            <p>
-                <span class="floor-clicker floor-clicker-previous float-left" data-target="floor-1">Floor 1</span>
-                <span class="floor-clicker floor-clicker-next float-right" data-target="floor-3">Floor 3</span>
+                <span class="floor-clicker floor-clicker-previous float-left" data-target="wer">Wer</span>
+                <span class="floor-clicker floor-clicker-next float-right" data-target="wann">Wann</span>
             </p>
         </div>
 
-        <div class="text text-floor-3">
-            <h1>Floor 3</h1>
+        <div class="text text-wann">
+            <h1>Wann</h1>
 
             <p>
-                Bacon ipsum dolor amet drumstick reprehenderit doner, biltong aliquip fatback ham picanha consectetur spare ribs ullamco id bacon in. Tenderloin short ribs aliquip occaecat, cupidatat fugiat chuck velit drumstick kevin alcatra aliqua cupim. Pork loin in lorem, et ham hock dolore rump officia cow aute strip steak cupidatat ut aliquip. Consectetur landjaeger incididunt drumstick alcatra in. Shankle tail cupidatat duis dolor, in aliquip et reprehenderit hamburger rump corned beef. Qui buffalo biltong shankle meatball cupidatat laborum chuck cupim nisi. Pig anim drumstick short loin, meatball voluptate shank tail sed pork loin duis eiusmod proident.
+                Samstag, den 12.05.2018<br />
+                Beginn: 17.30 Uhr
             </p>
 
             <p>
-                T-bone deserunt irure picanha, pork chop magna est laboris do id turkey drumstick et. Strip steak doner jerky ut frankfurter kielbasa, ball tip nulla excepteur aliqua bacon andouille ad exercitation fatback. Aute filet mignon fatback esse magna kielbasa, salami mollit. Ground round aute esse, ullamco filet mignon dolore excepteur salami shoulder id pork loin pariatur. Laborum bacon turducken, quis pig kielbasa strip steak sint venison pastrami jerky.
-            </p>
-
-            <p>
-                <span class="floor-clicker floor-clicker-previous float-left" data-target="floor-2">Floor 2</span>
-                <span class="floor-clicker floor-clicker-next float-right" data-target="floor-4">Floor 4</span>
+                <span class="floor-clicker floor-clicker-previous float-left" data-target="was">Was</span>
+                <span class="floor-clicker floor-clicker-next float-right" data-target="wo">Wo</span>
             </p>
         </div>
 
-        <div class="text text-floor-4">
-            <h1>Floor 4</h1>
+        <div class="text text-wo">
+            <h1>Wo</h1>
 
             <p>
-                Bacon ipsum dolor amet aute deserunt pariatur tenderloin enim short ribs do tail in. Magna frankfurter capicola in tongue bacon et. Ut non mollit velit shank. Jowl ribeye filet mignon fugiat esse nulla incididunt sirloin adipisicing. Magna shank ut, pork belly nisi bacon consectetur id porchetta duis. Sirloin eiusmod labore leberkas swine doner. Tongue cupidatat ad ea, incididunt ribeye shoulder chuck burgdoggen velit short ribs rump dolor ex culpa.
+                Gaswerk Halberstadt<br />
+                Wehrstedter Straße 48 A<br />
+                38820 Halberstadt<br />
             </p>
 
             <p>
-                Tenderloin cillum anim in swine. Chuck shankle deserunt adipisicing, tempor excepteur ball tip. Aute short loin reprehenderit, id venison ipsum ut consequat jowl exercitation incididunt occaecat dolore. Aliquip venison doner ex enim reprehenderit tenderloin ea corned beef do non sausage hamburger cillum quis.
+                Parkplätze sind in ausreichender Menge vor Ort, auf dem Gelände, verfügbar.
             </p>
 
             <p>
-                <span class="floor-clicker floor-clicker-previous float-left" data-target="floor-3">Floor 3</span>
-                <span class="floor-clicker floor-clicker-next float-right" data-target="floor-5">Floor 5</span>
-            </p>
-        </div>
-
-        <div class="text text-floor-5">
-            <h1>Floor 5</h1>
-
-            <p>
-                Bacon ipsum dolor amet ground round consectetur lorem officia, andouille occaecat jowl prosciutto doner sed spare ribs in. Brisket ut anim pork loin eiusmod id. Short loin sausage et, drumstick nulla sunt burgdoggen shank t-bone chuck buffalo proident rump ut. Jowl kevin laborum irure ipsum, et jerky brisket sirloin landjaeger pork reprehenderit. In flank et pork belly kevin rump. Pastrami dolore veniam, consectetur tempor ea shank. Pariatur spare ribs turkey labore ribeye corned beef picanha boudin capicola rump mollit reprehenderit shoulder aliquip.
-            </p>
-
-            <p>
-                Frankfurter pork loin laborum eiusmod voluptate. Labore deserunt ea dolore aliquip quis incididunt pastrami doner in boudin consectetur. Turkey voluptate shoulder quis sunt. Buffalo pastrami do tri-tip frankfurter meatloaf dolore tempor turducken excepteur. Picanha capicola laboris magna, culpa occaecat et burgdoggen sed duis in nisi.
-            </p>
-
-            <p>
-                <span class="floor-clicker floor-clicker-previous float-left" data-target="floor-4">Floor 4</span>
-                <span class="floor-clicker floor-clicker-next float-right" data-target="floor-6">Floor 6</span>
+                <span class="floor-clicker floor-clicker-previous float-left" data-target="wann">Wann</span>
+                <span class="floor-clicker floor-clicker-next float-right" data-target="wie">Wie</span>
             </p>
         </div>
 
-        <div class="text text-floor-6">
-            <h1>Floor 6</h1>
+        <div class="text text-wie">
+            <h1>Wie</h1>
 
             <p>
-                Bacon ipsum dolor amet cow excepteur fatback, do leberkas ribeye lorem exercitation salami cupidatat dolor. Ground round tempor nostrud consectetur, boudin leberkas tri-tip shank dolore beef non. In kielbasa tongue elit, bacon laboris pork loin leberkas adipisicing sirloin consectetur lorem venison. Tempor short ribs enim turducken.
+                Wir wünschen uns eine ungezwungene Party mit unseren Freunden, es muss sich daher niemand neu einkleiden.<br />
+                Über eine festlich-legere Kleidung freuen wir uns.
             </p>
 
             <p>
-                Pork belly corned beef cillum pork loin kevin, lorem minim ham hock. Dolore proident landjaeger in tail laborum ut excepteur nulla dolor hamburger. Exercitation culpa rump capicola ground round strip steak, aute adipisicing non jowl frankfurter swine turducken brisket veniam. Non ball tip meatloaf landjaeger short loin bresaola turkey tempor do pastrami short ribs ut. Magna landjaeger strip steak ullamco. Corned beef consectetur ham hock sirloin, ut hamburger labore pig short ribs tenderloin fatback in dolor et proident. Ground round ut aute irure beef cow aliquip officia est chuck picanha quis pariatur sed magna.
+                Wie ihr uns kennt, sind wir nicht die Gesellschaftsspielespieler, aus diesem Grund bereiten wir selbst keine Animation vor.<br />
+                Für eventuelle Überraschungen wendet euch vertrauensvoll an unsere Koordinatorin: Vanessa Riemann (Handynummer: <a href="tel:+49123456789">0123/456-789</a>)
             </p>
 
             <p>
-                <span class="floor-clicker floor-clicker-previous float-left" data-target="floor-5">Floor 5</span>
-                <span class="floor-clicker floor-clicker-next float-right" data-target="floor-1">Floor 1</span>
+                <span class="floor-clicker floor-clicker-previous float-left" data-target="wo">Wo</span>
+                <span class="floor-clicker floor-clicker-next float-right" data-target="warum">Wieso Weshalb Warum</span>
+            </p>
+        </div>
+
+        <div class="text text-warum">
+            <h1>Wieso Weshalb Warum</h1>
+
+            <p>
+                Unsere FAQ´s / Das Kleingedruckte
+            </p>
+
+            <p>
+                <strong>Anmeldung</strong>: Wir brauchen bis zum 15.03.2018 die Rückmeldung, wer mit uns mitfeiert.<br />
+                HIER lang.
+            </p>
+
+            <p>
+                <strong>Essen und Trinken</strong>: es wird für alle etwas dabei sein.<br />
+                Wenn wir diesbezüglich etwas für euch berücksichtigen sollen, teilt uns dies bitte bei der Anmeldung mit.
+            </p>
+
+            <p>
+                <strong>Unterkünfte in Halberstadt</strong>: gibt es jede Menge, in dieser Liste findet ihr eine Übersicht (Verlinkung)
+            </p>
+
+            <p>
+                <strong>Kinder</strong>: sind herzlich eingeladen mit uns zu feiern, wenn ihr keine Betreuung organisieren könnt. Gerne können wir uns hierfür vor Ort umhören.<br />
+                Es wird einen Kindertisch mit kleinen Mal- und Spielangeboten geben.
+            </p>
+
+            <p>
+                <strong>Geschenke</strong>: die immer gleiche Frage, was schenkt man dem Brautpaar?<br />
+                Wir machen es euch einfach - wir werden im Herbst 2018 unsere Flitterwochen in Florida verbringen und ihr dürft entscheiden, ob wir<br />
+                fliegen dürfen oder schwimmen müssen,<br />
+                im Zelt schlafen oder im Hotel logieren,<br />
+                Teller waschen oder Urlaub machen können.
+            </p>
+
+            <p>
+                <span class="floor-clicker floor-clicker-previous float-left" data-target="wie">Wie</span>
+                <span class="floor-clicker floor-clicker-next float-right" data-target="wer">Wer</span>
             </p>
         </div>
 
