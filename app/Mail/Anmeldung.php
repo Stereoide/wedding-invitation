@@ -15,6 +15,8 @@ class Anmeldung extends Mailable
 
     public $name;
     public $teilnahmestatus;
+    public $anzahlErwachsene;
+    public $anzahlKinder;
     public $kommentar;
 
     /**
@@ -22,10 +24,12 @@ class Anmeldung extends Mailable
      *
      * @return void
      */
-    public function __construct(string $name, string $teilnahmestatus, string $kommentar)
+    public function __construct(string $name, string $teilnahmestatus, string $kommentar, int $anzahlErwachsene, int $anzahlKinder)
     {
         $this->name = $name;
         $this->teilnahmestatus = $teilnahmestatus;
+        $this->anzahlErwachsene = $anzahlErwachsene;
+        $this->anzahlKinder = $anzahlKinder;
         $this->kommentar = $kommentar;
     }
 

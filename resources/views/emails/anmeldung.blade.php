@@ -19,6 +19,11 @@
         {{ $teilnahmestatus }}<br />
     </p>
 
+    <p>
+        <strong>Bringt mit:</strong><br />
+        {{ $anzahlErwachsene }} Erwachsene und {{ $anzahlKinder }} Kinder<br />
+    </p>
+
 @if (!empty($kommentar))
     <p>
         <strong>Was:</strong><br />

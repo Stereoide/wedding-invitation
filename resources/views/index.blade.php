@@ -154,6 +154,16 @@
         .bottom-filler {
             height: 600px;
         }
+
+        INPUT.fixed-height, SELECT.fixed-height {
+            padding: 3px 8px;
+            color: inherit;
+        }
+
+        INPUT.fixed-height, SELECT.fixed-height OPTION {
+            height: 16px;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -320,19 +330,43 @@
             <h1>Anmeldung</h1>
 
             <p>
-                <strong>Ich bin / wir sind</strong>:<br />
-                <textarea id="anmeldung_namen" name="names" width="100%" cols="80" rows="2" wrap="soft"></textarea>
+                Ich bin <input type="text" name="name" id="name" width="40" placeholder="Martina Mustermann" class="fixed-height" /> und ich
+                <select name="teilnahmestatus" id="teilnahmestatus" size="1" class="fixed-height">
+                    <option value="teilnahme" selected>möchte gern teilnehmen</option>
+                    <option value="absage">kann leider nicht teilnehmen</option>
+                </select> .
             </p>
 
-            <p>
-                <input type="radio" id="anmeldung_status_teilnahme" name="status" value="teilnahme" checked /> <label for="anmeldung_status_teilnahme">Ich möchte / wir möchten teilnehmen</label><br />
-                <input type="radio" id="anmeldung_status_absage" name="status" value="absage" /> <label for="anmeldung_status_absage">Ich kann / wir können leider nicht teilnehmen</label><br />
-            </p>
+            <div class="teilnahme-details">
+                <p>
+                    Ich bringe übrigens
+                    <select name="erwachsene" id="erwachsene" size="1" class="fixed-height">
+                        <option value="0" selected>keinen Erwachsenen</option>
+                        <option value="1">einen Erwachsenen</option>
+                        <option value="2">zwei Erwachsenen</option>
+                        <option value="3">drei Erwachsenen</option>
+                        <option value="4">vier Erwachsenen</option>
+                        <option value="5">fünf Erwachsenen</option>
+                        <option value="6">sechs Erwachsenen</option>
+                    </select>
+                    und
+                    <select name="kinder" id="kinder" size="1" class="fixed-height">
+                        <option value="0" selected>keine Kinder</option>
+                        <option value="1">ein Kind</option>
+                        <option value="2">zwei Kinder</option>
+                        <option value="3">drei Kinder</option>
+                        <option value="4">vier Kinder</option>
+                        <option value="5">fünf Kinder</option>
+                        <option value="6">sechs Kinder</option>
+                    </select>
+                    mit.
+                </p>
 
-            <p>
-                <strong>Und ich möchte euch noch folgendes sagen</strong>:<br />
-                <textarea id="anmeldung_kommentar" name="kommentar" width="100%" cols="80" rows="2" wrap="soft"></textarea>
-            </p>
+                <p>
+                    <strong>Und ich möchte euch noch folgendes sagen</strong>:<br />
+                    <textarea id="anmeldung_kommentar" name="kommentar" width="100%" cols="80" rows="2" wrap="soft"></textarea>
+                </p>
+            </div>
 
             <p>
                 <span class="anmeldung-submit-clicker button">Abschicken</span>
@@ -367,6 +401,14 @@
         }
 
         jQuery(function() {
+            jQuery('#teilnahmestatus').change(function() {
+                if (jQuery(this).val() == 'teilnahme') {
+                    jQuery('.teilnahme-details').show();
+                } else {
+                    jQuery('.teilnahme-details').hide();
+                }
+            });
+
             jQuery('.section-clicker').click(function() {
                 var target = '.section-' + jQuery(this).data('target');
                 scrollTo(target, 1000);
@@ -375,19 +417,21 @@
             jQuery('.anmeldung-submit-clicker').click(function() {
                 /* Fetch data */
 
-                var name = jQuery('#anmeldung_namen').val();
+                var name = jQuery('#name').val();
+                var teilnahmestatus = jQuery("#teilnahmestatus").val();
                 var kommentar = jQuery('#anmeldung_kommentar').val();
-                var anmeldungIsTeilnahme = jQuery('#anmeldung_status_teilnahme').is(':checked');
+                var anzahlErwachsene = jQuery('#erwachsene').val();
+                var anzahlKinder = jQuery('#kinder').val();
 
                 /* Send data */
 
-                jQuery.getJSON('anmeldung', {name: name, teilnahmestatus: (anmeldungIsTeilnahme ? 'Teilnahme' : 'Absage'), kommentar: kommentar});
+                jQuery.getJSON('anmeldung', {name: name, teilnahmestatus: teilnahmestatus, kommentar: kommentar, erwachsene: anzahlErwachsene, kinder: anzahlKinder});
 
                 /* Switch to new view */
 
                 jQuery('#anmeldung_abschluss_namen').html(name);
 
-                if (anmeldungIsTeilnahme) {
+                if (teilnahmestatus == 'teilnahme') {
                     jQuery('.anmeldung_abschluss_teilnahme').show();
                     jQuery('.anmeldung_abschluss_absage').hide();
                 } else {
