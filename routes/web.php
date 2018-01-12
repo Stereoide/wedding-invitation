@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
+    return view('prefix');
+})->name('prefix');
+
+Route::get('/mainpage', function () {
     return view('index');
-});
+})->name('index');
 
 Route::get('/anmeldung', 'AnmeldungController@anmeldung');

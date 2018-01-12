@@ -326,11 +326,11 @@
 
             <p>
                 <input type="radio" id="anmeldung_status_teilnahme" name="status" value="teilnahme" checked /> <label for="anmeldung_status_teilnahme">Ich möchte / wir möchten teilnehmen</label><br />
-                <input type="radio" id="anmeldung_status_absage" name="status" value="absage" /> <label for="anmeldung_status_absage">Ich möchte / wir können leider nicht teilnehmen</label><br />
+                <input type="radio" id="anmeldung_status_absage" name="status" value="absage" /> <label for="anmeldung_status_absage">Ich kann / wir können leider nicht teilnehmen</label><br />
             </p>
 
             <p>
-                <strong>Und ich möchte euch noch folgendes sagen:</strong>:<br />
+                <strong>Und ich möchte euch noch folgendes sagen</strong>:<br />
                 <textarea id="anmeldung_kommentar" name="kommentar" width="100%" cols="80" rows="2" wrap="soft"></textarea>
             </p>
 
