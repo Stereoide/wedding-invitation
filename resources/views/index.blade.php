@@ -272,15 +272,15 @@
             </p>
 
             <p>
-                <a href="Hotel Ambiente" rel="noopener" rel="noreferrer" target="_blank">http://hotel-ambiente-halberstadt.de</a> (günstig)<br />
+                <a href="http://hotel-ambiente-halberstadt.de" rel="noopener" rel="noreferrer" target="_blank">Hotel Ambiente</a> (günstig)<br />
             </p>
 
             <p>
-                <a href="Villa Heine" rel="noopener" rel="noreferrer" target="_blank">http://www.hotel-heine.de/</a> (exklusiv)<br />
+                <a href="http://www.hotel-heine.de/" rel="noopener" rel="noreferrer" target="_blank">Villa Heine</a> (exklusiv)<br />
             </p>
 
             <p>
-                <a href="Halberstädter Hof" rel="noopener" rel="noreferrer" target="_blank">http://www.halberstaedter-hof.de/</a> (ruhig)<br />
+                <a href="http://www.halberstaedter-hof.de/" rel="noopener" rel="noreferrer" target="_blank">Halberstädter Hof</a> (ruhig)<br />
             </p>
 
             <p>
