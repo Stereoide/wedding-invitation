@@ -15,8 +15,8 @@
     <title>Einladung zur Hochzeit</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:100" rel="stylesheet">
 
     <!-- Styles -->
     <style>
@@ -123,6 +123,8 @@
 
         .section H1 {
             margin-top: 0;
+            font-family: 'Dancing Script';
+            font-weight: 100;
             color: #ad515c;
         }
 
@@ -132,16 +134,6 @@
 
         A {
             color: inherit;
-        }
-
-        .text {
-            min-width: 50%;
-            max-width: 80%;
-        }
-
-        .text H1 {
-            font-family: 'Dancing Script';
-            color: #000;
         }
 
         .anmeldung-submit-clicker {
