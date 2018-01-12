@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/anmeldung', function() {
-    
-});
+Route::get('/anmeldung', 'AnmeldungController@anmeldung');

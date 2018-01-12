@@ -318,6 +318,11 @@
             </p>
 
             <p>
+                <strong>Und ich möchte euch noch folgendes sagen:</strong>:<br />
+                <textarea id="anmeldung_kommentar" name="kommentar" width="100%" cols="80" rows="2" wrap="soft"></textarea>
+            </p>
+
+            <p>
                 <span class="anmeldung-submit-clicker button">Abschicken</span>
             </p>
         </div>
@@ -359,12 +364,12 @@
                 /* Fetch data */
 
                 var name = jQuery('#anmeldung_namen').val();
-                console.log('name' + name);
+                var kommentar = jQuery('#anmeldung_kommentar').val();
                 var anmeldungIsTeilnahme = jQuery('#anmeldung_status_teilnahme').is(':checked');
 
                 /* Send data */
 
-                jQuery.getJSON('anmeldung', {name: name, teilnahme: anmeldungIsTeilnahme});
+                jQuery.getJSON('anmeldung', {name: name, teilnahmestatus: (anmeldungIsTeilnahme ? 'Teilnahme' : 'Absage'), kommentar: kommentar});
 
                 /* Switch to new view */
 
