@@ -231,30 +231,40 @@
             </p>
 
             <p>
-                <strong>Anmeldung</strong>:<br />
+                <strong>Anmeldung</strong><br />
+                <br />
+
                 <span class="section-clicker underline" data-target="anmeldung">Wir brauchen bis zum 15.03.2018 die Rückmeldung, wer mit uns mitfeiert</span>.<br />
             </p>
 
             <p>
-                <strong>Essen und Trinken</strong>:<br />
-                es wird für alle etwas dabei sein.<br />
+                <strong>Essen und Trinken</strong><br />
+                <br />
+
+                Es wird für alle etwas dabei sein.<br />
                 Wenn wir diesbezüglich etwas für euch berücksichtigen sollen, teilt uns dies bitte bei der Anmeldung mit.
             </p>
 
             <p>
-                <strong>Unterkünfte in Halberstadt</strong>:<br />
-                gibt es jede Menge, <span class="section-clicker underline" data-target="unterkuenfte">in dieser Liste findet ihr eine Übersicht</span>
+                <strong>Unterkünfte in Halberstadt</strong><br />
+                <br />
+
+                Gibt es jede Menge, <span class="section-clicker underline" data-target="unterkuenfte">in dieser Liste findet ihr eine Übersicht</span>
             </p>
 
             <p>
-                <strong>Kinder</strong>:<br />
-                sind herzlich eingeladen mit uns zu feiern, wenn ihr keine Betreuung organisieren könnt. Gerne können wir uns hierfür vor Ort umhören.<br />
+                <strong>Kinder</strong><br />
+                <br />
+
+                Sind herzlich eingeladen mit uns zu feiern, wenn ihr keine Betreuung organisieren könnt. Gerne können wir uns hierfür vor Ort umhören.<br />
                 Es wird einen Kindertisch mit kleinen Mal- und Spielangeboten geben.
             </p>
 
             <p>
-                <strong>Geschenke</strong>:<br />
-                die immer gleiche Frage, was schenkt man dem Brautpaar?<br />
+                <strong>Geschenke</strong><br />
+                <br />
+
+                Die immer gleiche Frage, was schenkt man dem Brautpaar?<br />
                 Wir machen es euch einfach - wir werden im Herbst 2018 unsere Flitterwochen in Florida verbringen und ihr dürft entscheiden, ob wir<br />
                 fliegen dürfen oder schwimmen müssen,<br />
                 im Zelt schlafen oder im Hotel logieren,<br />
