@@ -326,7 +326,7 @@
 
             <p>
                 <input type="radio" id="anmeldung_status_teilnahme" name="status" value="teilnahme" checked /> <label for="anmeldung_status_teilnahme">Ich möchte / wir möchten teilnehmen</label><br />
-                <input type="radio" id="anmeldung_status_absage" name="status" value="absage" /> <label for="anmeldung_status_absage">Ich möchte / wir möchten können leider nicht teilnehmen</label><br />
+                <input type="radio" id="anmeldung_status_absage" name="status" value="absage" /> <label for="anmeldung_status_absage">Ich möchte / wir können leider nicht teilnehmen</label><br />
             </p>
 
             <p>
