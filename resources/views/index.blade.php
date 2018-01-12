@@ -364,7 +364,7 @@
 
                 <p>
                     Und ich möchte euch noch folgendes sagen:<br />
-                    <textarea id="anmeldung_kommentar" name="kommentar" width="100%" cols="80" rows="2" wrap="soft"></textarea>
+                    <textarea id="anmeldung_kommentar" name="kommentar" width="100%" cols="80" rows="3" wrap="soft"></textarea>
                 </p>
             </div>
 
