@@ -16,7 +16,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
     <!-- Styles -->
     <style>
