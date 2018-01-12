@@ -127,7 +127,7 @@
             background-color: rgba(255, 255, 255, 0.95);
         }
 
-        .section.hidden {
+        .hidden {
             display: none;
         }
 
@@ -363,13 +363,17 @@
                 </p>
 
                 <p>
-                    <strong>Und ich möchte euch noch folgendes sagen</strong>:<br />
+                    Und ich möchte euch noch folgendes sagen:<br />
                     <textarea id="anmeldung_kommentar" name="kommentar" width="100%" cols="80" rows="2" wrap="soft"></textarea>
                 </p>
             </div>
 
-            <p>
-                <span class="anmeldung-submit-clicker button">Abschicken</span>
+            <p class="submit-teilnahme">
+                <span class="anmeldung-submit-clicker button">Anmeldung bestätigen</span>
+            </p>
+
+            <p class="submit-absage hidden">
+                <span class="anmeldung-submit-clicker button">Absage bestätigen</span>
             </p>
         </div>
 
@@ -404,8 +408,14 @@
             jQuery('#teilnahmestatus').change(function() {
                 if (jQuery(this).val() == 'teilnahme') {
                     jQuery('.teilnahme-details').show();
+
+                    jQuery('.submit-teilnahme').show();
+                    jQuery('.submit-absage').hide();
                 } else {
                     jQuery('.teilnahme-details').hide();
+
+                    jQuery('.submit-teilnahme').hide();
+                    jQuery('.submit-absage').show();
                 }
             });
 
