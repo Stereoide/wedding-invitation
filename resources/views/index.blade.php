@@ -21,6 +21,22 @@
     <!-- Styles -->
     <style>
         body {
+            color: #636b6f;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        body:after{
+            content:"";
+            position:fixed; /* stretch a fixed position to the whole screen */
+            top:0;
+            height:100vh; /* fix for mobile browser address bar appearing disappearing */
+            left:0;
+            right:0;
+            z-index:-1; /* needed to keep in the background */
             background-color: #0079a4;
             background-image: url({{ asset('img/leuchtturm.jpg') }});
             background-position: left top;
@@ -28,12 +44,6 @@
             background-attachment: fixed;
             -webkit-background-size: cover;
             background-size: cover;
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            height: 100vh;
-            padding: 0;
-            margin: 0;
         }
 
         .navigation {
