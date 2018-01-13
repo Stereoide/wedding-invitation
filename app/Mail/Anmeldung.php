@@ -24,7 +24,7 @@ class Anmeldung extends Mailable
      *
      * @return void
      */
-    public function __construct(string $name, string $teilnahmestatus, string $kommentar, int $anzahlErwachsene, int $anzahlKinder)
+    public function __construct($name, $teilnahmestatus, $kommentar, $anzahlErwachsene, $anzahlKinder)
     {
         $this->name = $name;
         $this->teilnahmestatus = $teilnahmestatus;

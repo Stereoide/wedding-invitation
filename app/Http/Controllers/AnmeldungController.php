@@ -24,7 +24,7 @@ class AnmeldungController extends Controller
         $anzahlKinder = $request->kinder;
         $kommentar = $request->kommentar;
 
-        Mail::to('Stereoide@gmail.com')->send(new Anmeldung($name, $teilnahmestatus, (string)$kommentar, $anzahlErwachsene, $anzahlKinder));
+        Mail::to('Stereoide@gmail.com')->send(new Anmeldung($name, $teilnahmestatus, $kommentar, $anzahlErwachsene, $anzahlKinder));
 
         echo json_encode(['status' => 'ok', 'input' => $input]);
         exit;
