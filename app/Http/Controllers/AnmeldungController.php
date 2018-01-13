@@ -16,6 +16,8 @@ class AnmeldungController extends Controller
      */
     public function anmeldung(Request $request)
     {
+        $input = $request->all();
+
         $name = $request->input('name');
         $teilnahmestatus = $request->teilnahmestatus;
         $anzahlErwachsene = $request->erwachsene;
@@ -24,7 +26,7 @@ class AnmeldungController extends Controller
 
         Mail::to('Stereoide@gmail.com')->send(new Anmeldung($name, $teilnahmestatus, $kommentar, $anzahlErwachsene, $anzahlKinder));
 
-        echo json_encode(['status' => 'ok']);
+        echo json_encode(['status' => 'ok', 'input' => $input]);
         exit;
     }
 }
