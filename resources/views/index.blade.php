@@ -229,7 +229,7 @@
 
             <p>
                 Wie ihr uns kennt, sind wir nicht die Gesellschaftsspielespieler, aus diesem Grund bereiten wir selbst keine Animation vor.<br />
-                Für eventuelle Überraschungen wendet euch vertrauensvoll an unsere Koordinatorin: Vanessa Riemann (Handynummer: <a href="tel:+4915770606875">0157/70606875</a>)
+                Für eventuelle Überraschungen wendet euch vertrauensvoll an unsere Koordinatorin: Vanessa Riemann (Handynummer: <a href="tel:+4917623963798">+49 176 23963798</a>)
             </p>
         </div>
 
