@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    $now = \Carbon\Carbon::now();
+    $now = \Carbon\Carbon::yesterday();
     $partyDate = \Carbon\Carbon::createFromTimestamp(mktime(0, 0, 0, 5, 12, 2018));
 
     $daysToParty = $partyDate->diffInDays($now);

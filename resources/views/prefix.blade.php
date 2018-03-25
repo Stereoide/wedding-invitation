@@ -106,7 +106,7 @@
                 <img src="{{ asset('img/photo.jpg') }}" alt="" border="0" />
 
                 <div>
-                    Wer hätte es gedacht, wir trauen uns - und in {{ $daysToParty }} wird gefeiert.
+                    Wer hätte es gedacht, wir trauen uns - und in {{ $daysToParty }} Tagen wird gefeiert.
                 </div>
             </p>
 
