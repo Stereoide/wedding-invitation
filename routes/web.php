@@ -12,7 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('prefix');
+    $now = \Carbon\Carbon::now();
+    $partyDate = \Carbon\Carbon::createFromTimestamp(mktime(0, 0, 0, 5, 12, 2018));
+
+    $daysToParty = $partyDate->diffInDays($now);
+
+    return view('prefix')->with(compact('daysToParty'));
 })->name('prefix');
 
 Route::get('/mainpage', function () {
