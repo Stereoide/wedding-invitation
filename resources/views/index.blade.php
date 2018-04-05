@@ -244,7 +244,7 @@
                 <strong>Anmeldung</strong><br />
                 <br />
 
-                <span class="section-clicker underline" data-target="anmeldung">Wir brauchen bis zum 15.03.2018 die Rückmeldung, wer mit uns mitfeiert</span>.<br />
+                <span class="section-clicker underline" data-target="anmeldung">Bitte gebt uns eine kurze Rückmeldung, wer mit uns mitfeiert</span>.<br />
             </p>
 
             <p>
