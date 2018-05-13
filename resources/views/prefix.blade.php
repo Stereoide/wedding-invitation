@@ -106,16 +106,7 @@
                 <img src="{{ asset('img/photo.jpg') }}" alt="" border="0" />
 
                 <div>
-                    Wer hätte es gedacht, wir trauen uns - und
-                @if ($daysToParty > 1)
-                    in {{ $daysToParty }} Tagen wird gefeiert.
-                @elseif ($daysToParty == 1)
-                    morgen wird gefeiert.
-                @elseif ($daysToParty == 0)
-                    heute wird gefeiert.
-                @else
-                    am 12.05.2018 wurde gefeiert.
-                @endif
+                    Wer hätte es gedacht, wir trauen uns - und am 12.05.2018 wurde gefeiert.
                 </div>
             </p>
 
